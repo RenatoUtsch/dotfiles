@@ -93,7 +93,7 @@ clang-format
 Clone this repository together with it's submodules to somewhere in your home:
 
 ```shell
-git clone --recursive https://github.com/RenatoUtsch/dotfiles ~/.config/dotfiles
+git clone --recursive -j8 https://github.com/RenatoUtsch/dotfiles ~/dotfiles
 ```
 
 Enter the dotfiles directory and use `stow` to symlink what you want. For
