@@ -8,7 +8,7 @@ Some features:
 * Fish
 * Vim/Neovim
 * Tmux
-* 24-bit True Color colorschemes
+* 24-bit True Color colorscheme
 
 # Terminal configuration
 
