@@ -63,7 +63,7 @@ clang-format
 nodejs
 ```
 
-Dependencies to be installed through `npm` globally (installed with `nodejs`):
+Dependencies to be installed through `npm` globally:
 
 ```
 eslint
@@ -120,3 +120,32 @@ On Mac OS, you'll need to use iTerm2 and MacOS Sierra or later. For Mac OS only:
 1. On iTerm2's settings, enable the "Applications in terminal may access
    clipboard" option.
 
+# Updating
+
+To update the dotfiles to the latest version, first pull the latest version of
+the repository:
+
+```shell
+git pull
+```
+
+Then, restow all packages that you use. For example, for fish:
+
+```shell
+stow -R fish
+```
+
+## Manually updating plugins
+
+WARNING: you should not need to do this to update the dotfiles. Doing this might
+break your dotfiles in case the plugins make any incompatible changes. Using the
+version provided by these dotfiles ensures all programs work as expected.
+
+If you want to use the latest version of all plugins instead of just using the
+versions that come with these dotfiles, run:
+
+```shell
+git submodule update --recursive --remote
+```
+
+This will update all submodules to their latest versions.
