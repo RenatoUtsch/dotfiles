@@ -19,7 +19,7 @@ Some features:
    [ConEmu](https://github.com/Maximus5/ConEmu) on Windows.
 1. Change the terminal font to one of the
    [powerline patched fonts](https://github.com/powerline/fonts). I personally
-   use Hack 11pt.
+   use Hack. The font size depends on the display.
 
 # Global Dependencies
 
@@ -110,7 +110,9 @@ Please take a look below for additional instructions for each package:
 ## Vim/Neovim
 
 You only need to run `stow vim` for both Vim and Neovim, as the config files are
-shared between both of them.
+shared between both of them. Internally, the Neovim structure of folders is
+used, as it's better than vim's. The dotfiles try to preserve the default XDG
+directory structure as much as possible.
 
 ## Tmux
 
