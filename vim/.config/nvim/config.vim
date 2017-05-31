@@ -86,7 +86,7 @@ set splitbelow  " Puts new split windows to the bottom of the current.
 set pastetoggle=<F12>  " pastetoggle (sane indentation on pastes).
 
 " Remove trailing whitespaces and ^M chars.
-autocmd FileType * autocmd BufWritePre <buffer> call g:strip_trailing_whitespace()
+autocmd! FileType * autocmd BufWritePre <buffer> call g:strip_trailing_whitespace()
 
 " Do not enforce PEP8.
 let g:python_recommended_style = 0

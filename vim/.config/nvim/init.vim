@@ -17,6 +17,11 @@
 set nocompatible
 set termguicolors
 
+" Add ~/.config/nvim to the runtimepath if not in neovim.
+if !has('nvim')
+  set runtimepath=~/.config/nvim,$VIMRUNTIME
+endif
+
 " Constants used throughout the entire configuration.
 source ~/.config/nvim/settings.vim
 
@@ -24,22 +29,20 @@ source ~/.config/nvim/settings.vim
 source ~/.config/nvim/functions.vim
 
 " Windows portability.
-if has("win32") || has("win64")
+if has('win32') || has('win64')
   source ~/.config/nvim/windows.vim
 endif
 
 " gvim-specific settings.
-if has("gui_running")
+if has('gui_running')
   source ~/.config/nvim/gvim.vim
 endif
 
-" Plugs.
-call plug#begin('~/.config/nvim/plugged')
-source ~/.config/nvim/plugs.vim
-call plug#end()
+" Load all plugins.
+packloadall
 
-" Plug configuration.
-source ~/.config/nvim/plugs.config.vim
+" Plugin configuration.
+source ~/.config/nvim/plugins.vim
 
 " Editor configuration.
 source ~/.config/nvim/config.vim

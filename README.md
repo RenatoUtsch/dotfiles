@@ -109,6 +109,9 @@ Please take a look below for additional instructions for each package:
 
 ## Vim/Neovim
 
+You'll need to install
+[the silver searcher](https://github.com/ggreer/the_silver_searcher).
+
 You only need to run `stow vim` for both Vim and Neovim, as the config files are
 shared between both of them. Internally, the Neovim structure of folders is
 used, as it's better than vim's. The dotfiles try to preserve the default XDG
