@@ -25,6 +25,9 @@ endif
 " Constants used throughout the entire configuration.
 source ~/.config/nvim/settings.vim
 
+" Set leader key.
+let mapleader = g:settings.leader_key
+
 " Functions used throughout the entire configuration.
 source ~/.config/nvim/functions.vim
 

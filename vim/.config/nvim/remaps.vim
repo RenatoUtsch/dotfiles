@@ -13,9 +13,6 @@
 " See the License for the specific language governing permissions and
 " limitations under the License.
 
-" Set leader key.
-let mapleader = g:settings.leader_key
-
 " Wrapped lines goes down/up to next row, rather than next line in file.
 noremap j gj
 noremap k gk
