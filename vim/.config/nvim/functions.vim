@@ -14,19 +14,19 @@
 " limitations under the License.
 
 " Ensures a directory exists.
-function! g:ensure_dir_exists(path)
+function! EnsureDirExists(path)
   if !isdirectory(expand(a:path))
     call mkdir(expand(a:path))
   endif
 endfunction
 
 " Returns the full path from a path relative to the cache dir.
-function! g:get_cache_dir(path)
+function! GetCacheDir(path)
   return expand(g:settings.cache_dir . '/' . a:path)
 endfunction
 
 " Strips trailing whitespace from the entire file.
-function! g:strip_trailing_whitespace()
+function! StripTrailingWhitespace()
     " Preparation: save last search, and cursor position.
     let _s=@/
     let l = line(".")

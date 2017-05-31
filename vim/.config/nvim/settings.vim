@@ -1,7 +1,7 @@
-" Copyright 2017 Renato Utsch 
+" Copyright 2017 Renato Utsch
 "
 " This project is released under the Apache 2 license.
-" Licensed under the Apache License, Version 2.0 (the "License"); 
+" Licensed under the Apache License, Version 2.0 (the "License");
 " you may not use this file except in compliance with the License.
 " You may obtain a copy of the License at
 "
@@ -17,7 +17,7 @@
 let g:settings = {}
 
 " Leader key.
-let g:leader_key = ','
+let g:settings.leader_key = ','
 
 " Default indent. While you can change this indent on a per-file basis, this
 " is the default when you open a new file.

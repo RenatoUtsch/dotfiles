@@ -1,7 +1,7 @@
-" Copyright 2017 Renato Utsch 
+" Copyright 2017 Renato Utsch
 "
 " This project is released under the Apache 2 license.
-" Licensed under the Apache License, Version 2.0 (the "License"); 
+" Licensed under the Apache License, Version 2.0 (the "License");
 " you may not use this file except in compliance with the License.
 " You may obtain a copy of the License at
 "
@@ -14,7 +14,7 @@
 " limitations under the License.
 
 " Set leader key.
-let &mapleader=g:settings.leader_key
+let mapleader = g:settings.leader_key
 
 " Wrapped lines goes down/up to next row, rather than next line in file.
 noremap j gj

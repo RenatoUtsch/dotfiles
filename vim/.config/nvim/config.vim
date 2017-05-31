@@ -1,7 +1,7 @@
-" Copyright 2017 Renato Utsch 
+" Copyright 2017 Renato Utsch
 "
 " This project is released under the Apache 2 license.
-" Licensed under the Apache License, Version 2.0 (the "License"); 
+" Licensed under the Apache License, Version 2.0 (the "License");
 " you may not use this file except in compliance with the License.
 " You may obtain a copy of the License at
 "
@@ -14,7 +14,7 @@
 " limitations under the License.
 
 " Use + register when possible for copy-paste, or * if + is not available.
-if has("unnamedplus")  
+if has("unnamedplus")
   set clipboard=unnamed,unnamedplus
 else
   set clipboard=unnamed
@@ -36,22 +36,23 @@ set virtualedit=onemore  " Allow the cursor to go after the last character.
 au FileType gitcommit au! BufEnter COMMIT_EDITMSG call setpos('.', [0, 1, 1, 0])
 
 set backup  " Enable backups.
-let &backupdir = g:get_cache_dir('backup')  " Backup folder.
+let &backupdir = GetCacheDir('backup')  " Backup folder.
 
 set undofile  " Enable persistent undo.
 set undolevels=1000  " Number of changes that can be undone.
 set undoreload=10000  " Number lines to save for undo on a buffer reload.
-let &undodir=g:get_cache_dir('undo')  " Undo folder.
+let &undodir=GetCacheDir('undo')  " Undo folder.
 
-let &directory=g:get_cache_dir('swap')  " Swap folder.
+let &directory=GetCacheDir('swap')  " Swap folder.
 
 " Ensure the cache dirs all exist.
-call g:ensure_dir_exists(g:get_cache_dir(''))
-call g:ensure_dir_exists(&undodir)
-call g:ensure_dir_exists(&backupdir)
-call g:ensure_dir_exists(&directory)
+call EnsureDirExists(GetCacheDir(''))
+call EnsureDirExists(&undodir)
+call EnsureDirExists(&backupdir)
+call EnsureDirExists(&directory)
 
-let &colorscheme=g:settings.colorscheme  " Set the colorscheme.
+" Set the colorscheme.
+exec 'colorscheme ' . g:settings.colorscheme
 
 set showmode  " Display the current mode
 set cursorline  " Highlight current line
@@ -86,7 +87,7 @@ set splitbelow  " Puts new split windows to the bottom of the current.
 set pastetoggle=<F12>  " pastetoggle (sane indentation on pastes).
 
 " Remove trailing whitespaces and ^M chars.
-autocmd! FileType * autocmd BufWritePre <buffer> call g:strip_trailing_whitespace()
+autocmd! FileType * autocmd! BufWritePre <buffer> call StripTrailingWhitespace()
 
 " Do not enforce PEP8.
 let g:python_recommended_style = 0

@@ -8,80 +8,80 @@
 	path = tmux/.config/tmux/plugins/tmux-sensible
 	url = https://github.com/tmux-plugins/tmux-sensible
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-neovim-defaults"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-neovim-defaults
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-neovim-defaults
 	url = https://github.com/noahfrederick/vim-neovim-defaults
 [submodule "vim/.config/nvim/pack/renatoutsch/start/gruvbox"]
-	path = vim/.config/nvim/pack/renatoutsch/start/gruvbox
+	path = vim/.config/nvim/pack/renatoutsch/opt/gruvbox
 	url = https://github.com/morhetz/gruvbox
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-maktaba"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-maktaba
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-maktaba
 	url = https://github.com/google/vim-maktaba
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-glaive"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-glaive
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-glaive
 	url = https://github.com/google/vim-glaive
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-bufferline"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-bufferline
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-bufferline
 	url = https://github.com/bling/vim-bufferline
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-tmux-navigator"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-tmux-navigator
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-tmux-navigator
 	url = https://github.com/christoomey/vim-tmux-navigator
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-airline"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-airline
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-airline
 	url = https://github.com/vim-airline/vim-airline
 [submodule "vim/.config/nvim/pack/renatoutsch/start/tmuxline.vim"]
-	path = vim/.config/nvim/pack/renatoutsch/start/tmuxline.vim
+	path = vim/.config/nvim/pack/renatoutsch/opt/tmuxline.vim
 	url = https://github.com/weihanglo/tmuxline.vim
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-codefmt"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-codefmt
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-codefmt
 	url = https://github.com/google/vim-codefmt
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-signify"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-signify
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-signify
 	url = https://github.com/mhinz/vim-signify
 [submodule "vim/.config/nvim/pack/renatoutsch/start/neomake"]
-	path = vim/.config/nvim/pack/renatoutsch/start/neomake
+	path = vim/.config/nvim/pack/renatoutsch/opt/neomake
 	url = https://github.com/neomake/neomake
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-closetag"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-closetag
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-closetag
 	url = https://github.com/alvan/vim-closetag
 [submodule "vim/.config/nvim/pack/renatoutsch/start/matchit.zip"]
-	path = vim/.config/nvim/pack/renatoutsch/start/matchit.zip
+	path = vim/.config/nvim/pack/renatoutsch/opt/matchit.zip
 	url = https://github.com/benjifisher/matchit.zip
 [submodule "vim/.config/nvim/pack/renatoutsch/start/wildfire.vim"]
-	path = vim/.config/nvim/pack/renatoutsch/start/wildfire.vim
+	path = vim/.config/nvim/pack/renatoutsch/opt/wildfire.vim
 	url = https://github.com/gcmt/wildfire.vim
 [submodule "vim/.config/nvim/pack/renatoutsch/start/tabular"]
-	path = vim/.config/nvim/pack/renatoutsch/start/tabular
+	path = vim/.config/nvim/pack/renatoutsch/opt/tabular
 	url = https://github.com/godlygeek/tabular
 [submodule "vim/.config/nvim/pack/renatoutsch/start/auto-pairs"]
-	path = vim/.config/nvim/pack/renatoutsch/start/auto-pairs
+	path = vim/.config/nvim/pack/renatoutsch/opt/auto-pairs
 	url = https://github.com/jiangmiao/auto-pairs
 [submodule "vim/.config/nvim/pack/renatoutsch/start/undotree"]
-	path = vim/.config/nvim/pack/renatoutsch/start/undotree
+	path = vim/.config/nvim/pack/renatoutsch/opt/undotree
 	url = https://github.com/mbbill/undotree
 [submodule "vim/.config/nvim/pack/renatoutsch/start/numbers.vim"]
-	path = vim/.config/nvim/pack/renatoutsch/start/numbers.vim
+	path = vim/.config/nvim/pack/renatoutsch/opt/numbers.vim
 	url = https://github.com/myusuf3/numbers.vim
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-indent-guides"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-indent-guides
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-indent-guides
 	url = https://github.com/nathanaelkane/vim-indent-guides
 [submodule "vim/.config/nvim/pack/renatoutsch/start/conflict-marker.vim"]
-	path = vim/.config/nvim/pack/renatoutsch/start/conflict-marker.vim
+	path = vim/.config/nvim/pack/renatoutsch/opt/conflict-marker.vim
 	url = https://github.com/rhysd/conflict-marker.vim
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-commentary"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-commentary
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-commentary
 	url = https://github.com/tpope/vim-commentary
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-surround"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-surround
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-surround
 	url = https://github.com/tpope/vim-surround
 [submodule "vim/.config/nvim/pack/renatoutsch/start/restore_view.vim"]
-	path = vim/.config/nvim/pack/renatoutsch/start/restore_view.vim
+	path = vim/.config/nvim/pack/renatoutsch/opt/restore_view.vim
 	url = https://github.com/vim-scripts/restore_view.vim
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-spirv"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-spirv
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-spirv
 	url = https://github.com/kbenzie/vim-spirv
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-polyglot"]
-	path = vim/.config/nvim/pack/renatoutsch/start/vim-polyglot
+	path = vim/.config/nvim/pack/renatoutsch/opt/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
 [submodule "vim/.config/nvim/pack/renatoutsch/start/ag.vim"]
-	path = vim/.config/nvim/pack/renatoutsch/start/ag.vim
+	path = vim/.config/nvim/pack/renatoutsch/opt/ag.vim
 	url = https://github.com/rking/ag.vim
