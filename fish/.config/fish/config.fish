@@ -17,7 +17,12 @@
 set -gx CC clang
 set -gx EDITOR vim
 set -gx PATH /usr/local/bin $PATH ~/go/bin ~/.npm-global/bin
-set -gx TERM xterm-256color
+
+if test -n "$TMUX"
+  set -gx TERM screen-256color
+else
+  set -gx TERM xterm-256color
+end
 
 # Global aliases.
 alias vim=nvim
