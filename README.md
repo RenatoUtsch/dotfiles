@@ -124,6 +124,8 @@ On Mac OS, you'll need to use iTerm2 and MacOS Sierra or later. For Mac OS only:
 1. Install `reattach-to-user-namespace`. It can be installed with homebrew.
 1. On iTerm2's settings, enable the "Applications in terminal may access
    clipboard" option.
+1. Disable the Mission control key bindings for the arrow keys. They interfere
+   with tmux's bindings to resize panes.
 
 # Updating
 
