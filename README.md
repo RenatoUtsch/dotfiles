@@ -109,10 +109,14 @@ Please take a look below for additional instructions for each package:
 
 ## Fish
 
-On Linux, you'll want to install `xclip`. For ArchLinux only, also install
-`pacmatic`.
+On Linux, you'll want to install the following commands:
+```
+xclip
+time
+```
 
-Keep in mind that the Linux configuration is tuned towards ArchLinux.
+For ArchLinux only, also install `pacmatic`. Keep in mind that the Linux
+configuration is tuned to ArchLinux.
 
 ## Vim/Neovim
 
