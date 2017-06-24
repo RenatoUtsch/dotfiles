@@ -35,6 +35,7 @@ let b:match_ignorecase = 1
 packadd! neomake
 autocmd! BufWritePost * Neomake
 let g:neomake_javascript_enabled_makers = ['eslint']
+let g:neomake_python_enabled_makers = ['pylint']
 
 packadd! numbers.vim
 packadd! restore_view.vim

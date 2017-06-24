@@ -16,7 +16,14 @@
 # Environment variables.
 set -gx CC clang
 set -gx EDITOR vim
-set -gx PATH /usr/local/bin $PATH ~/go/bin ~/.npm-global/bin
+set -gx PATH /usr/local/bin $PATH
+
+if test -d ~/go/bin
+  set -gx PATH $PATH ~/go/bin
+end
+if test -d ~/.npm-global/bin
+  set -gx PATH $PATH ~/.npm-global/bin
+end
 
 if test -n "$TMUX"
   set -gx TERM screen-256color
