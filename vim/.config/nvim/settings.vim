@@ -39,3 +39,10 @@ let g:settings.gvim_font = 'Hack:h10'
 
 " Folder where the cache, backups and undo history should be stored.
 let g:settings.cache_dir = '~/.cache/nvim'
+
+" Source file for the work vim config.
+let g:settings.work_config = '~/.config/nvim/work.vim'
+
+" If at work.
+let g:settings.at_work = filereadable(expand(g:settings.work_config))
+

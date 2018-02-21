@@ -163,7 +163,7 @@ If you want to use the latest version of all plugins instead of just using the
 versions that come with these dotfiles, run:
 
 ```shell
-git submodule update --recursive --remote
+git submodule update --init --recursive --remote
 ```
 
 This will update all submodules to their latest versions.

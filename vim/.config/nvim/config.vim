@@ -51,7 +51,12 @@ call EnsureDirExists(&undodir)
 call EnsureDirExists(&backupdir)
 call EnsureDirExists(&directory)
 
+" Fix vim for tmux.
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
 " Set the colorscheme.
+set background=dark
 exec 'colorscheme ' . g:settings.colorscheme
 
 set showmode  " Display the current mode

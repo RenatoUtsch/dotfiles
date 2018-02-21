@@ -14,16 +14,16 @@
 # limitations under the License.
 
 # Fix web-component-tester chrome tests.
-set -gx LAUNCHPAD_CHROME /usr/bin/google-chrome-stable
+#set -gx LAUNCHPAD_CHROME /usr/bin/google-chrome-stable
 
 alias chrome=google-chrome-stable
-alias pacman=pacmatic
+#alias pacman=pacmatic
 alias pbcopy="xclip -sel clip"
 alias pbpaste="xclip -sel clip -o"
 
 # Start X at login
-if status --is-login
-  if test -z "$DISPLAY" -a $XDG_VTNR = 1
-    exec startx -- -keeptty
-  end
-end
+#if status --is-login
+#  if test -z "$DISPLAY" -a $XDG_VTNR = 1
+#    exec startx -- -keeptty
+#  end
+#end

@@ -16,6 +16,7 @@
 " Essential settings: nocompatible, 24-bit True Color.
 set nocompatible
 set termguicolors
+set packpath=~/.config/nvim
 
 " Add ~/.config/nvim to the runtimepath if not in neovim.
 if !has('nvim')
@@ -49,3 +50,10 @@ source ~/.config/nvim/config.vim
 
 " Remaps.
 source ~/.config/nvim/remaps.vim
+
+" Stuff from work.
+if g:settings.at_work
+  exec 'source ' . g:settings.work_config
+endif
+
+filetype plugin indent on

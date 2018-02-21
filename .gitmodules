@@ -30,7 +30,7 @@
 	url = https://github.com/vim-airline/vim-airline
 [submodule "vim/.config/nvim/pack/renatoutsch/start/tmuxline.vim"]
 	path = vim/.config/nvim/pack/renatoutsch/opt/tmuxline.vim
-	url = https://github.com/weihanglo/tmuxline.vim
+	url = https://github.com/edkolev/tmuxline.vim
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-codefmt"]
 	path = vim/.config/nvim/pack/renatoutsch/opt/vim-codefmt
 	url = https://github.com/google/vim-codefmt
