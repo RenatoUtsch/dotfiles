@@ -22,6 +22,6 @@ function fish_prompt
 
   # Line 2
   echo
-  printf '↪ '
+  echo -n '-> '
   set_color normal
 end
