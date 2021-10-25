@@ -20,6 +20,10 @@ alias chrome=google-chrome-stable
 #alias pacman=pacmatic
 alias pbcopy="xclip -sel clip"
 alias pbpaste="xclip -sel clip -o"
+alias vim="nvim"
+set -gx CC clang
+set -gx CXX clang++
+set -gx RUSTC_WRAPPER sccache
 
 # Start X at login
 #if status --is-login

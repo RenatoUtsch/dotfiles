@@ -14,7 +14,7 @@
 # limitations under the License.
 
 # Environment variables.
-set -gx EDITOR vim
+set -gx EDITOR nvim
 
 if test -n "$TMUX"
   set -gx TERM screen-256color
