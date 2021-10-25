@@ -14,16 +14,40 @@
 " limitations under the License.
 
 " Sane defaults.
-packadd! vim-neovim-defaults
+if !has('nvim')
+  packadd! vim-neovim-defaults
+endif
 
 " maktaba and glaive needs to go before all other plugins if not at work
 if !g:settings.at_work
+  packadd! vim-codefmt
   packadd! vim-maktaba
   packadd! vim-glaive
   call glaive#Install()
+
+  Glaive codefmt plugin[mappings]
+
+  augroup autoformat_settings
+    autocmd!
+    autocmd FileType bzl AutoFormatBuffer buildifier
+    autocmd FileType c,cpp,proto,javascript,arduino AutoFormatBuffer clang-format
+    autocmd FileType dart AutoFormatBuffer dartfmt
+    autocmd FileType go AutoFormatBuffer gofmt
+    autocmd FileType gn AutoFormatBuffer gn
+    autocmd FileType html,css,sass,scss,less,json AutoFormatBuffer js-beautify
+    autocmd FileType java AutoFormatBuffer google-java-format
+    autocmd FileType python AutoFormatBuffer yapf
+    " Alternative: autocmd FileType python AutoFormatBuffer autopep8
+    autocmd FileType rust AutoFormatBuffer rustfmt
+    autocmd FileType vue AutoFormatBuffer prettier
+  augroup END
 endif
 
-packadd! ag.vim
+packadd! ack.vim
+if executable('ag')
+    let g:ackprg = 'ag --vimgrep'
+endif
+
 packadd! auto-pairs
 packadd! conflict-marker.vim
 
@@ -36,11 +60,10 @@ let b:match_ignorecase = 1
 
 
 " At work use syntastic instead of neomake
-if g:settings.at_work
-
-else
+if !g:settings.at_work
   packadd! neomake
-  autocmd! BufWritePost * Neomake
+  call neomake#configure#automake('nrwi', 500)
+  let g:neomake_open_list = 2
   let g:neomake_javascript_enabled_makers = ['eslint']
   let g:neomake_python_enabled_makers = ['pylint']
 endif
@@ -68,21 +91,6 @@ let g:airline_theme = g:settings.airline_colorscheme
 
 packadd! vim-bufferline
 packadd! vim-closetag
-
-if !g:settings.at_work
-  packadd! vim-codefmt
-  Glaive codefmt plugin[mappings]
-
-  augroup autoformat_settings
-    autocmd!
-    autocmd FileType bzl AutoFormatBuffer buildifier
-    autocmd FileType c,cpp,proto,javascript AutoFormatBuffer clang-format
-    autocmd FileType go AutoFormatBuffer gofmt
-    autocmd FileType java AutoFormatBuffer google-java-format
-    autocmd FileType python AutoFormatBuffer pyformat
-  augroup END
-endif
-
 packadd! vim-commentary
 
 packadd! vim-indent-guides

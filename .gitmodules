@@ -82,6 +82,6 @@
 [submodule "vim/.config/nvim/pack/renatoutsch/start/vim-polyglot"]
 	path = vim/.config/nvim/pack/renatoutsch/opt/vim-polyglot
 	url = https://github.com/sheerun/vim-polyglot
-[submodule "vim/.config/nvim/pack/renatoutsch/start/ag.vim"]
-	path = vim/.config/nvim/pack/renatoutsch/opt/ag.vim
-	url = https://github.com/rking/ag.vim
+[submodule "vim/.config/nvim/pack/renatoutsch/opt/ack.vim"]
+	path = vim/.config/nvim/pack/renatoutsch/opt/ack.vim
+	url = https://github.com/mileszs/ack.vim.git
