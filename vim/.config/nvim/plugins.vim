@@ -71,13 +71,7 @@ endif
 packadd! numbers.vim
 packadd! restore_view.vim
 packadd! tabular
-
-" Only enable this to set up and save a new tmuxline theme.
-" Just pay attention, the latest version of tmuxline doesn't support truecolors
-" properly, and the fork that did support was deleted. So trying to use
-" tmuxline right now may break the statusline. Until they fix this, leave the
-" tmuxline colors sourced by tmux unchanged.
-" packadd! tmuxline.vim
+packadd! tmuxline.vim
 
 packadd! undotree
 nnoremap <Leader>u :UndotreeToggle<CR>
